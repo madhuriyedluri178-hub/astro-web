@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Our Leadership Team</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Code</title>
+    <style>
+        /* Basic reset and background */
+        body {
+            background-color:white; /* Dark background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* --- Navigation Bar (Header) --- */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            /* Border to separate header from main content */
+            border-bottom: 1px solid #333; 
+        }
+
+        /* Logo Styling */
+        .logo a {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logo p {
+            font-size: 10px;
+            margin: 0;
+            color: #aaa;
+            letter-spacing: 1px;
+            margin-top: 3px;
+        }
+        
+        /* Simulating the logo text and stars */
+        .logo span {
+            /* Placeholder for the star graphic */
+            color: #ffcc00; 
+            margin-right: 3px;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            position: relative; /* For the dropdown arrow */
+        }
+
+        .nav-links a {
+            color: #140404;
+            text-decoration: none;
+            font-size: 16px;
+            padding-bottom: 5px;
+            transition: color 0.3s;
+            display: block;
+        }
+        
+        /* Dropdown arrow simulation for items with an arrow */
+        .nav-links .has-dropdown a::after {
+            content: ' ▼';
+            font-size: 10px;
+            margin-left: 5px;
+            position: relative;
+            top: -2px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            /* Border to separate header from main content */
+            border-bottom: 1px solid #333; 
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="#" style="color:#140404"><span>**</span>ASTROTECH<span>**</span></a>
+            <p>INNOVATION | THINKING | ANALYZING</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li class="has-dropdown"><a href="#">Team</a></li>
+            <li class="has-dropdown"><a href="#">Domains</a></li>
+            <li class="has-dropdown"><a href="#">About Us</a></li>
+            <li class="has-dropdown"><a href="#">Community</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+     <center><h1 style="color:green">Meet our Team-To Explore the Unseen Fronter</h1></center>
+    <div class="team-container">
+        
+        <div class="team-card" onclick="openModal('ceo')">
+            <div class="card-image ceo-image"></div>
+            <h3>N.Vijaya Lakshmi</h3>
+            <p class="role">Team Leader</p>
+            <p class="title">**Chief Executive Officer (CEO)**</p>
+            <button class="view-profile">View Profile & Details</button>
+        </div>
+
+        <div class="team-card" onclick="openModal('cto')">
+            <div class="card-image cto-image"></div>
+            <h3>Madhuri Yedluri</h3>
+            <p class="role">Technical Leader</p>
+            <p class="title">**Chief Technology Officer (CTO)**</p>
+            <button class="view-profile">View Profile & Details</button>
+        </div>
+
+        <div class="team-card" onclick="openModal('cpo')">
+            <div class="card-image cpo-image"></div>
+            <h3>M.Vijaya Lakshmi</h3>
+            <p class="role">Communication Leader</p>
+            <p class="title">**Chief Product Officer (CPO)**</p>
+            <button class="view-profile">View Profile & Details</button>
+        </div>
+
+        <div class="team-card" onclick="openModal('cmo')">
+            <div class="card-image cmo-image"></div>
+            <h3>Udaya Lakshmi</h3>
+            <p class="role">Social Leader</p>
+            <p class="title">**Chief Marketing Officer (CMO)**</p>
+            <button class="view-profile">View Profile & Details</button>
+        </div>
+
+        <div class="team-card" onclick="openModal('cro')">
+            <div class="card-image cro-image"></div>
+            <h3>K.Vennala</h3>
+            <p class="role">Research Leader</p>
+            <p class="title">**Chief Research Officer (CRO)**</p>
+            <button class="view-profile">View Profile & Details</button>
+        </div>
+
+    </div>
+
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modal-details">
+                </div>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
